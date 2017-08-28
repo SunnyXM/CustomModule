@@ -1,10 +1,4 @@
-//
-//  UIView+UIView_Utils.m
-//  BaseUIKit
-//
-//  Created by 黄 帅 on 6/6/13.
-//  Copyright (c) 2013 北京神州天鸿科技有限公司. All rights reserved.
-//
+
 
 #import "UIView+UIView_Utils.h"
 
