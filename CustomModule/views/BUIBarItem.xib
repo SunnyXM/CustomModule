@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1611" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="AWf-yx-U1G" customClass="BUIBarItem">
+            <rect key="frame" x="0.0" y="0.0" width="64" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aa-o9-RXL">
+                    <rect key="frame" x="0.0" y="0.0" width="64" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="35" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Vlin">
+                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cPU-Ns-N7C">
+                    <rect key="frame" x="16" y="3" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="Ge5-CV-Sqq"/>
+                        <constraint firstAttribute="height" constant="32" id="IMf-T9-UOv"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tab_icon_unread.png" translatesAutoresizingMaskIntoConstraints="NO" id="abY-RT-Xcg">
+                    <rect key="frame" x="48" y="2" width="6" height="6"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="6" id="PYO-91-SrG"/>
+                        <constraint firstAttribute="width" constant="6" id="U9u-dR-o39"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3aa-o9-RXL" firstAttribute="top" secondItem="AWf-yx-U1G" secondAttribute="top" id="9WF-OT-wmB"/>
+                <constraint firstAttribute="centerX" secondItem="cPU-Ns-N7C" secondAttribute="centerX" id="SwY-bQ-aD9"/>
+                <constraint firstItem="3aa-o9-RXL" firstAttribute="leading" secondItem="AWf-yx-U1G" secondAttribute="leading" id="TXG-xW-QBw"/>
+                <constraint firstItem="abY-RT-Xcg" firstAttribute="leading" secondItem="cPU-Ns-N7C" secondAttribute="trailing" id="hnf-gp-m0l"/>
+                <constraint firstAttribute="trailing" secondItem="3aa-o9-RXL" secondAttribute="trailing" id="lT7-W0-QS0"/>
+                <constraint firstItem="cPU-Ns-N7C" firstAttribute="top" secondItem="abY-RT-Xcg" secondAttribute="bottom" constant="-5" id="mrQ-dd-e9w"/>
+                <constraint firstAttribute="bottom" secondItem="3aa-o9-RXL" secondAttribute="bottom" id="pX0-ay-xXZ"/>
+                <constraint firstAttribute="centerY" secondItem="cPU-Ns-N7C" secondAttribute="centerY" constant="6" id="xnD-Ms-bAK"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="buttomImv" destination="cPU-Ns-N7C" id="R4K-3g-Z7p"/>
+                <outlet property="clickButton" destination="3aa-o9-RXL" id="0cB-Tb-Lmm"/>
+                <outlet property="tipImv" destination="abY-RT-Xcg" id="D4R-uZ-1N7"/>
+            </connections>
+            <point key="canvasLocation" x="-274" y="-18"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tab_icon_unread.png" width="16" height="16"/>
+    </resources>
+</document>

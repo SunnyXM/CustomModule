@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>className</key>
+		<string>CMHomeController</string>
+		<key>module</key>
+		<string>主页</string>
+	</dict>
+	<dict>
+		<key>module</key>
+		<string>联系人</string>
+		<key>className</key>
+		<string>CMContactController</string>
+	</dict>
+	<dict>
+		<key>module</key>
+		<string>消息</string>
+		<key>className</key>
+		<string>CMChatController</string>
+	</dict>
+</array>
+</plist>
